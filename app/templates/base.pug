@@ -1,0 +1,37 @@
+html
+  head
+    title Hearthstone Card Collection
+    link(href = '/static/styles/base.css' rel = 'stylesheet')
+    script(src = 'https://unpkg.com/vue')
+  body
+    div(class = 'page')
+      div(class = 'nav-bar') Hearthstone Cards
+        div(class = 'nav-subbar') 
+          div
+            a(href = '/index' class = 'nav-item') Home
+          div
+            a(href = '/cards' class = 'nav-item') Cards
+          div 
+            a(href = '/yourCollection' class = 'nav-item') Your Collection
+          div
+            a(href = '/cardGenerator' class = 'nav-item') Card Generator
+          div
+            a(href = '/about' class = 'nav-item') About
+          div
+            a(href = '/contact' class = 'nav-item') Contact
+        div(class = 'nav-subbar')
+          div
+            a(href = '/login' class = 'nav-item') Login
+          div
+            a(href = '/logout' class = 'nav-item') Logout
+
+      hr
+      div(class = 'container')
+        div(class = 'content')
+          block content
+        div(class = 'aside1')
+          block aside1
+        div(class = 'aside2')
+          block aside2
+        div(class = 'footerClass')
+          h1(class = 'footerText') Copyright@ Emilian-Phyramid, November 2017

@@ -1,0 +1,10 @@
+doctype html
+extends base.pug
+
+block aside2
+  form(class = 'loginForm')
+    label(for = 'username', class = 'label1') Username :
+    input(type = 'text', name = 'username', class = 'input1')
+    label(for = 'password', class = 'label2') Password :
+    input(type = 'password', name = 'password', class = 'input2')
+    button(type = 'submit' value="Sign In!", class = 'button') Sign In!

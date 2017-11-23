@@ -1,0 +1,100 @@
+body {
+  background-image: url('http://www.designbolts.com/wp-content/uploads/2012/12/White-Gradient-Squares-Seamless-Patterns-For-Website-Backgrounds.jpg');
+}
+a {
+  text-decoration: none;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 35px;
+  font-family: 'Open-sans', serif;
+  min-height: 65px;
+  border-radius: 25px;
+}
+
+.nav-subbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  font-size: 30px;
+}
+
+.nav-item {
+  font-size: 30px;
+  margin-left: 10px;
+  border-radius: 25px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 9fr 1fr;
+  grid-gap: 10px 10px;
+  justify-items: stretch;
+  allign-items: stretch;
+  border-radius: 25px;
+}
+
+.aside1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.aside2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.content {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  border-radius: 25px;
+}
+
+.footerClass {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+}
+
+.footerClass .footerText {
+  text-align: center;
+}
+
+.loginForm {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px 10px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 200px;
+}
+.label1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.label2 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.input1 {
+  grid-column: 2/ span 1;
+  grid-row: 1 / span 1;
+}
+.input2 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+.button {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  width: 75px;
+  height: 25px;
+  align-self: center;
+  justify-self: center;
+}
+
+
